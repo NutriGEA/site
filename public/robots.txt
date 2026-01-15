@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /offer.html
+Disallow: /personal-data-policy.html
+Disallow: /privacy-consent.html

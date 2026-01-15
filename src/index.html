@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Нутрициолог Елизавета Григорец</title>
+  <meta name="description" content="Выстраиваю рацион под вас: контроль веса, лучшее самочувствие, без запретов. Профессиональная поддержка при целиакии." />
+  <meta property="og:title" content="Нутрициолог Елизавета Григорец" />
+  <meta property="og:description" content="Выстраиваю рацион под вас: контроль веса, лучшее самочувствие, без запретов. Профессиональная поддержка при целиакии." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="%VITE_PUBLIC_URL%" />
+  <!-- <meta property="og:image" content="/og.webp" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Сайт нутрициолога Елизаветы Григорец" /> -->
+  <link href="./index.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-header__nav">
+      <a href="#" class="main-header__logo" aria-label="В начало страницы">NutriGEA</a>
+      <ul class="main-header__menu">
+        <li><a href="#features">Направления</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#background">Образование</a></li>
+      </ul>
+    </nav>
+    <a href="https://t.me/NutriGEAbot" target="_blank">
+      <svg width="48" height="48" aria-label="Написать в телеграм">
+        <use href="./sprite.svg#telegram" />
+      </svg>
+    </a>
+    <a href="mailto:NutriGEA@yandex.ru">
+      <svg width="48" height="48" aria-label="Написать на почту">
+        <use href="./sprite.svg#email" />
+      </svg>
+    </a>
+  </header>
+
+  <main>
+    <section id="hero">
+      <hgroup>
+        <h1>Елизавета Григорец</h1>
+        <p aria-label="Квалификация">
+          Нутрициолог, специалист по питанию, член АДНС
+        </p>
+      </hgroup>
+
+      <p class="hero__core">
+        Помогаю выстраивать сбалансированный рацион, который стабилизирует вес, поддерживает
+        здоровье, повышает качество жизни и&nbsp;сохраняет удовольствие от&nbsp;еды
+      </p>
+
+      <p class="hero__celiac">
+        Оказываю профессиональную поддержку людям с&nbsp;диагнозом <strong>целиакия</strong>
+      </p>
+
+      <a class="lead-button" href="https://t.me/NutriGEAbot" target="_blank">
+        Записаться на&nbsp;консультацию
+      </a>
+    </section>
+
+    <section id="features" class="cards">
+      <h2>Направления работы</h2>
+
+      <div class="cards__container">
+        <article>
+          <h3>Целиакия</h3>
+          <picture>
+            <source media="(width < 24rem)" type="image/webp"
+              srcset="./img/wheat-w270.webp 1x, ./img/wheat-w540.webp 2x">
+            <source media="(24rem <= width < 40rem)" type="image/webp"
+              srcset="./img/wheat-w640.webp 1x, ./img/wheat-w1280.webp 2x">
+            <source media="(width >= 40rem)" type="image/webp"
+              srcset="./img/wheat-h120.webp 1x, ./img/wheat-h240.webp 2x">
+            <img alt="" loading="lazy" decoding="async" src="./img/wheat-h120.webp">
+          </picture>
+          <ul>
+            <li>Безглютеновая диета без дефицитов и&nbsp;«жизни на&nbsp;запретах»</li>
+            <li>Безопасность в&nbsp;быту и&nbsp;при&nbsp;посещении мест общепита</li>
+            <li>Принципы организации поездок внутри страны и&nbsp;за&nbsp;рубеж</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Рацион под цель</h3>
+          <picture>
+            <source media="(width < 24rem)" type="image/webp"
+              srcset="./img/plate-w270.webp 1x, ./img/plate-w540.webp 2x">
+            <source media="(24rem <= width < 40rem)" type="image/webp"
+              srcset="./img/plate-w640.webp 1x, ./img/plate-w1280.webp 2x">
+            <source media="(width >= 40rem)" type="image/webp"
+              srcset="./img/plate-h120.webp 1x, ./img/plate-h240.webp 2x">
+            <img alt="" loading="lazy" decoding="async" src="./img/plate-h120.webp">
+          </picture>
+          <ul>
+            <li>Коррекция веса (набор, снижение)</li>
+            <li>Коррекция рациона для улучшения самочувствия</li>
+            <li>Внедрение привычек</li>
+          </ul>
+        </article>
+      </div>
+
+      <a class="lead-button" href="https://t.me/NutriGEAbot" target="_blank">
+        Обсудить запрос
+      </a>
+    </section>
+
+    <section id="services" class="cards">
+      <h2>Услуги</h2>
+
+      <div class="cards__container">
+        <article>
+          <svg width="5em" height="5em">
+            <use href="./sprite.svg#speed-time-fast" />
+          </svg>
+
+          <hgroup>
+            <h3>Экспресс-консультация</h3>
+            <p>до 30 минут</p>
+          </hgroup>
+
+          <p class="service__price">2&nbsp;000&nbsp;руб.</p>
+
+          <ul>
+            <li>Уточнение 1-2 конкретных вопросов</li>
+            <li>Проверка достоверности полученных рекомендаций<br>(второе мнение)</li>
+            <li>Точечная обратная связь без&nbsp;глубокого разбора рациона </li>
+          </ul>
+        </article>
+
+        <article>
+          <svg width="5em" height="5em">
+            <use href="./sprite.svg#midnight" />
+          </svg>
+
+          <hgroup>
+            <h3>Разовая консультация</h3>
+            <p>до 60 минут</p>
+          </hgroup>
+
+          <p class="service__price">3&nbsp;600&nbsp;руб.</p>
+
+          <ul>
+            <li>Анализ текущего рациона и&nbsp;образа жизни</li>
+            <li>Обсуждение целей</li>
+            <li>
+              Формирование практических рекомендаций по&nbsp;корректировке питания и&nbsp;привычек
+            </li>
+            <li>Ответы на&nbsp;вопросы</li>
+          </ul>
+        </article>
+
+        <article>
+          <svg width="5em" height="5em">
+            <use href="./sprite.svg#hours-round-time" />
+          </svg>
+
+          <hgroup>
+            <h3>Разовая консультация с&nbsp;сопровождением</h3>
+            <p>до 60 минут + 7 дней поддержки в&nbsp;Telegram</p>
+          </hgroup>
+
+          <p class="service__price">5&nbsp;000&nbsp;руб.</p>
+
+          <p>
+            Услуги разовой консультации<br>
+            +<br>
+            чат в&nbsp;Telegram для&nbsp;вопросов и&nbsp;поддержки в&nbsp;течение недели после
+            консультации
+          </p>
+        </article>
+
+        <article>
+          <svg width="5em" height="5em">
+            <use href="./sprite.svg#time-hours" />
+          </svg>
+
+          <hgroup>
+            <h3>Сопровождение</h3>
+            <p>от 1 месяца и более</p>
+          </hgroup>
+
+          <p class="service__price">16&nbsp;000&nbsp;руб.</p>
+
+          <ul>
+            <li>Онлайн-встречи 1&nbsp;раз в неделю</li>
+            <li>
+              Чат в Telegram для&nbsp;вопросов и&nbsp;поддержки в&nbsp;течение всего срока
+              сопровождения
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <a class="lead-button" href="https://t.me/NutriGEAbot" target="_blank">
+        Подобрать услугу
+      </a>
+    </section>
+
+    <section id="about">
+      <picture>
+        <source media="(max-width: 48rem)" type="image/webp"
+          srcset="./img/lilac-mobile.webp 1x, ./img/lilac-mobile-2x.webp 2x">
+        <source media="(48rem < width < 75rem)" type="image/webp"
+          srcset="./img/lilac-medium.webp 1x, ./img/lilac-medium-2x.webp 2x">
+        <source media="(min-width: 75rem)" type="image/webp"
+          srcset="./img/lilac-desktop.webp 1x, ./img/lilac-desktop-2x.webp 2x">
+        <img src="./img/lilac-desktop.webp" alt="Личное фото" loading="lazy" decoding="async">
+      </picture>
+
+      <div class="about__text">
+        <h2>Обо мне</h2>
+
+        <hr class="separator">
+
+        <p class="about__mynameis">Меня зовут Елизавета Григорец.</p>
+
+        <p>
+          Я нутрициолог, член
+          <a href="https://nutritionassociation.ru/" target="_blank">Ассоциации
+            доказательных нутрициологов и&nbsp;специалистов общественного здравоохранения
+            <svg viewBox="0 0 500 550" class="intext">
+              <use href="./sprite.svg#aenpphe-logo" />
+            </svg></a>.
+        </p>
+
+        <p>
+          За моей спиной окончание программы
+          <a href="https://nutritionassociation.ru/nutrition-program/"
+            target="_blank">«Нутрициология: наука и&nbsp;практика»
+            <svg viewBox="0 0 298 52" class="intext nutrition-pro">
+              <use href="./sprite.svg#nutrition-pro-logo" />
+            </svg></a>
+          и&nbsp;профильных курсов Stanford University. В&nbsp;своей работе я&nbsp;опираюсь
+          на&nbsp;научные данные и&nbsp;актуальные рекомендации авторитетных российских
+          и&nbsp;международных организаций.
+        </p>
+
+        <p>
+          <strong>Я сама живу с&nbsp;целиакией</strong> и&nbsp;хорошо понимаю, как выстраивать
+          питание с&nbsp;учётом ограничений, не&nbsp;превращая жизнь в&nbsp;бесконечный список
+          «нельзя». Это помогает мне бережно сопровождать людей с&nbsp;ограничительными состояниями,
+          и&nbsp;тех, кто просто хочет «договориться» с&nbsp;едой и&nbsp;своим телом
+        </p>
+
+        <p>
+          Я регулярно обновляю знания и прохожу дополнительное обучение, чтобы мои рекомендации
+          оставались актуальными и опирались на современную научную базу
+        </p>
+      </div>
+    </section>
+
+    <section id="background" class="cards">
+      <h2>Образование</h2>
+
+      <ul class="background__carousel">
+        <li>
+          <a href="/files/BP-50C45_20251127_124233.pdf" target="_blank">
+            <picture>
+              <source type="image/webp"
+                srcset="./img/diplomata/BP-50C45_20251127_124233.webp 1x, ./img/diplomata/BP-50C45_20251127_124233-2x.webp 2x">
+              <img alt="Диплом «Нутрициология. Наука и практика»" loading="lazy" decoding="async"
+                src="./img/diplomata/BP-50C45_20251127_124233.webp">
+            </picture>
+          </a>
+        </li>
+
+        <li>
+          <a href="/files/Child_Nutrition_and_Eating_Behaviour.pdf" target="_blank">
+            <picture>
+              <source type="image/webp"
+                srcset="./img/diplomata/Child_Nutrition_and_Eating_Behaviour.webp 1x, ./img/diplomata/Child_Nutrition_and_Eating_Behaviour-2x.webp 2x">
+              <img alt="Диплом «Child Nutrition and Eating Behaviour»" loading="lazy" decoding="async"
+                src="./img/diplomata/Child_Nutrition_and_Eating_Behaviour.webp">
+            </picture>
+          </a>
+        </li>
+
+        <li>
+          <a href="/files/Coursera_88VKLZGR6AJC.pdf" target="_blank">
+            <picture>
+              <source type="image/webp"
+                srcset="./img/diplomata/Coursera_88VKLZGR6AJC.webp 1x, ./img/diplomata/Coursera_88VKLZGR6AJC-2x.webp 2x">
+              <img alt="Сертификат «Stanford Introduction to Food and Health»" loading="lazy"
+                decoding="async" src="./img/diplomata/Coursera_88VKLZGR6AJC.webp">
+            </picture>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <section>
+      <h2>Самозанятый</h2>
+
+      <p>Григорец Елизавета Андреевна</p>
+      <p>ИНН: 772078664036</p>
+      <p>Москва</p>
+    </section>
+
+    <section>
+      <h2>Контакты</h2>
+
+      <ul class="footer__links">
+        <li><a href="https://t.me/NutriGEA" target="_blank">Мой канал @NutriGEA</a></li>
+        <li><a href="https://t.me/NutriGEAbot" target="_blank">Написать в Telegram</a></li>
+        <li><a href="mailto:NutriGEA@yandex.ru">NutriGEA@yandex.ru</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Документы</h2>
+
+      <ul class="footer__links">
+        <li>
+          <a href="/offer.html" target="_blank" rel="noopener noreferrer">
+            Публичная оферта
+          </a>
+        </li>
+        <li>
+          <a href="/personal-data-policy.html" target="_blank" rel="noopener noreferrer">
+            Политика обработки персональных данных
+          </a>
+        </li>
+        <li>
+          <a href="/privacy-consent.html" target="_blank" rel="noopener noreferrer">
+            Согласие на обработку персональных данных
+          </a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+</body>
+
+</html>
