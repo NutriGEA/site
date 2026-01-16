@@ -246,12 +246,6 @@ main > section:nth-child(even) {
   padding: 1.5em;
   border-radius: 5px;
   box-shadow: var(--shadow-elev-2);
-
-  transition: transform 0.3s ease;
-}
-
-.cards__container > article:hover {
-  transform: scale(1.025);
 }
 
 #features h3 {
@@ -355,6 +349,10 @@ main > section:nth-child(even) {
   line-height: 1.7em;
 }
 
+#about img {
+  border-radius: 5px;
+}
+
 @media (width < 75rem) {
   #about img {
     width: 100%;
@@ -426,10 +424,6 @@ main > section:nth-child(even) {
   box-shadow: var(--shadow-elev-2);
 
   transition: transform 0.3s ease;
-}
-
-.background__items img:hover {
-  transform: scale(1.025);
 }
 
 @media (max-width: 55rem) {
