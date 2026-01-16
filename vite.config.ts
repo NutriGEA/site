@@ -14,9 +14,6 @@ export default {
         pdPolicy: 'personal-data-policy.html',
         privacyConsent: 'privacy-consent.html',
       },
-      output: {
-        assetFileNames: 'assets/[name].[ext]',
-      },
     },
   },
 } satisfies UserConfig;
