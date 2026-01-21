@@ -1,4 +1,5 @@
 import type {UserConfig} from 'vite';
+import htmlMinifier from 'vite-plugin-html-minifier';
 
 export default {
   root: 'src',
@@ -16,4 +17,7 @@ export default {
       },
     },
   },
+  plugins: [
+    htmlMinifier(),
+  ],
 } satisfies UserConfig;
