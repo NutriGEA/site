@@ -21,20 +21,12 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link
-    rel="preload"
+  <link rel="preload"
     href="../node_modules/@fontsource-variable/montserrat/files/montserrat-cyrillic-wght-normal.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  />
-  <link
-    rel="preload"
+    as="font" type="font/woff2" crossorigin />
+  <link rel="preload"
     href="../node_modules/@fontsource-variable/montserrat/files/montserrat-latin-wght-normal.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  />
+    as="font" type="font/woff2" crossorigin />
   <style>
     @import "./index.css";
   </style>
@@ -95,13 +87,24 @@
         <article>
           <h3>Целиакия</h3>
           <picture>
-            <source media="(width < 24rem)" type="image/webp"
-              srcset="./img/wheat-w270.webp 1x, ./img/wheat-w540.webp 2x">
-            <source media="(24rem <= width < 40rem)" type="image/webp"
-              srcset="./img/wheat-w640.webp 1x, ./img/wheat-w1280.webp 2x">
-            <source media="(width >= 40rem)" type="image/webp"
-              srcset="./img/wheat-h120.webp 1x, ./img/wheat-h240.webp 2x">
-            <img alt="" loading="lazy" decoding="async" src="./img/wheat-h120.webp">
+            <source type="image/avif" sizes="(min-width: 40rem) 120px, calc(100vw - 7em)" srcset="
+              ./img/wheat-h120.avif 120w,
+              ./img/wheat-h240.avif 240w,
+              ./img/wheat-w316.avif 316w,
+              ./img/wheat-w525.avif 525w,
+              ./img/wheat-w632.avif 632w,
+              ./img/wheat-w948.avif 948w
+            ">
+            <source type="image/webp" sizes="(min-width: 40rem) 120px, calc(100vw - 7em)" srcset="
+              ./img/wheat-h120.webp 120w,
+              ./img/wheat-h240.webp 240w,
+              ./img/wheat-w316.webp 316w,
+              ./img/wheat-w525.webp 525w,
+              ./img/wheat-w632.webp 632w,
+              ./img/wheat-w948.webp 948w
+            ">
+            <img alt="" loading="lazy" decoding="async" width="120" height="120"
+              src="./img/wheat-h120.webp">
           </picture>
           <ul>
             <li>Безглютеновая диета без дефицитов и&nbsp;«жизни на&nbsp;запретах»</li>
@@ -113,13 +116,24 @@
         <article>
           <h3>Рацион под цель</h3>
           <picture>
-            <source media="(width < 24rem)" type="image/webp"
-              srcset="./img/plate-w270.webp 1x, ./img/plate-w540.webp 2x">
-            <source media="(24rem <= width < 40rem)" type="image/webp"
-              srcset="./img/plate-w640.webp 1x, ./img/plate-w1280.webp 2x">
-            <source media="(width >= 40rem)" type="image/webp"
-              srcset="./img/plate-h120.webp 1x, ./img/plate-h240.webp 2x">
-            <img alt="" loading="lazy" decoding="async" src="./img/plate-h120.webp">
+            <source type="image/avif" sizes="(min-width: 40rem) 120px, calc(100vw - 7em)" srcset="
+              ./img/plate-h120.avif 120w,
+              ./img/plate-h240.avif 240w,
+              ./img/plate-w316.avif 316w,
+              ./img/plate-w525.avif 525w,
+              ./img/plate-w632.avif 632w,
+              ./img/plate-w948.avif 948w
+            ">
+            <source type="image/webp" sizes="(min-width: 40rem) 120px, calc(100vw - 7em)" srcset="
+              ./img/plate-h120.webp 120w,
+              ./img/plate-h240.webp 240w,
+              ./img/plate-w316.webp 316w,
+              ./img/plate-w525.webp 525w,
+              ./img/plate-w632.webp 632w,
+              ./img/plate-w948.webp 948w
+            ">
+            <img alt="" width="200" height="120" loading="lazy" decoding="async"
+              src="./img/plate-h120.webp">
           </picture>
           <ul>
             <li>Коррекция веса (набор, снижение)</li>
@@ -227,13 +241,16 @@
 
     <section id="about">
       <picture>
-        <source media="(max-width: 48rem)" type="image/webp"
-          srcset="./img/lilac-mobile.webp 1x, ./img/lilac-mobile-2x.webp 2x">
-        <source media="(48rem < width < 75rem)" type="image/webp"
-          srcset="./img/lilac-medium.webp 1x, ./img/lilac-medium-2x.webp 2x">
+        <source media="(min-width: 75rem)" type="image/avif"
+          srcset="./img/lilac-vertical.avif 1x, ./img/lilac-vertical-2x.avif 2x">
         <source media="(min-width: 75rem)" type="image/webp"
-          srcset="./img/lilac-desktop.webp 1x, ./img/lilac-desktop-2x.webp 2x">
-        <img src="./img/lilac-desktop.webp" alt="Личное фото" loading="lazy" decoding="async">
+          srcset="./img/lilac-vertical.webp 1x, ./img/lilac-vertical-2x.webp 2x">
+        <source media="(min-width: 48rem)" type="image/avif"
+          srcset="./img/lilac-horizontal.avif 1x, ./img/lilac-horizontal-2x.avif 2x">
+        <source media="(min-width: 48rem)" type="image/webp"
+          srcset="./img/lilac-horizontal.webp 1x, ./img/lilac-horizontal-2x.webp 2x">
+        <img src="./img/lilac-vertical.webp" alt="Личное фото" width="510" height="680"
+          loading="lazy" decoding="async">
       </picture>
 
       <div class="about__text">
@@ -287,8 +304,8 @@
             <picture>
               <source type="image/webp"
                 srcset="./img/diplomata/BP-50C45_20251127_124233.webp 1x, ./img/diplomata/BP-50C45_20251127_124233-2x.webp 2x">
-              <img alt="Диплом «Нутрициология. Наука и практика»" loading="lazy" decoding="async"
-                src="./img/diplomata/BP-50C45_20251127_124233.webp">
+              <img alt="Диплом «Нутрициология. Наука и практика»" width="495" height="350"
+                loading="lazy" decoding="async" src="./img/diplomata/BP-50C45_20251127_124233.webp">
             </picture>
           </a>
         </li>
@@ -298,7 +315,8 @@
             <picture>
               <source type="image/webp"
                 srcset="./img/diplomata/Child_Nutrition_and_Eating_Behaviour.webp 1x, ./img/diplomata/Child_Nutrition_and_Eating_Behaviour-2x.webp 2x">
-              <img alt="Диплом «Child Nutrition and Eating Behaviour»" loading="lazy" decoding="async"
+              <img alt="Диплом «Child Nutrition and Eating Behaviour»" width="248" height="350"
+                loading="lazy" decoding="async"
                 src="./img/diplomata/Child_Nutrition_and_Eating_Behaviour.webp">
             </picture>
           </a>
@@ -309,8 +327,9 @@
             <picture>
               <source type="image/webp"
                 srcset="./img/diplomata/Coursera_88VKLZGR6AJC.webp 1x, ./img/diplomata/Coursera_88VKLZGR6AJC-2x.webp 2x">
-              <img alt="Сертификат «Stanford Introduction to Food and Health»" loading="lazy"
-                decoding="async" src="./img/diplomata/Coursera_88VKLZGR6AJC.webp">
+              <img alt="Сертификат «Stanford Introduction to Food and Health»" width="453"
+                height="350" loading="lazy" decoding="async"
+                src="./img/diplomata/Coursera_88VKLZGR6AJC.webp">
             </picture>
           </a>
         </li>
