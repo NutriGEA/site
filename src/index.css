@@ -212,6 +212,7 @@ main > section:nth-child(even) {
 #hero {
   max-width: 54rem;
   min-height: calc(100vh - var(--height-header));
+  min-height: calc(100svh - var(--height-header));
   margin: auto;
   display: grid;
   gap: 2em;
