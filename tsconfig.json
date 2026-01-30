@@ -1,20 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "useDefineForClassFields": true,
-    "skipLibCheck": true,
-    "noEmit": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
-    "types": ["node"],
-    "incremental": true
-  },
-  "include": ["vite.config.ts"]
+  "files": [],
+  "references": [
+    { "path": "./config/tsconfig.browser.json" },
+    { "path": "./config/tsconfig.node.json" }
+  ]
 }

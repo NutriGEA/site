@@ -30,6 +30,7 @@
   <style>
     @import "./index.css";
   </style>
+  <script type="module" src="./image-viewer.ts"></script>
 </head>
 
 <body>
@@ -56,6 +57,14 @@
       </svg>
     </a>
   </header>
+
+  <dialog id="background-viewer" closedby="any">
+    <button aria-label="Закрыть изображение">
+      <svg>
+        <use href="./sprite.svg#close-button" />
+      </svg>
+    </button>
+  </dialog>
 
   <main id="main">
     <section id="hero">
@@ -300,38 +309,59 @@
 
       <ul class="background__carousel">
         <li>
-          <a href="/files/BP-50C45_20251127_124233.pdf" target="_blank">
-            <picture>
-              <source type="image/webp"
-                srcset="./img/diplomata/BP-50C45_20251127_124233.webp 1x, ./img/diplomata/BP-50C45_20251127_124233-2x.webp 2x">
-              <img alt="Диплом «Нутрициология. Наука и практика»" width="495" height="350"
-                loading="lazy" decoding="async" src="./img/diplomata/BP-50C45_20251127_124233.webp">
-            </picture>
-          </a>
+          <picture>
+            <source type="image/avif" srcset="
+              ./img/credentials/01-BP-50C45_20251127_124233-thumb1x.avif 1x,
+              ./img/credentials/01-BP-50C45_20251127_124233-thumb2x.avif 2x">
+            <source type="image/webp" srcset="
+              ./img/credentials/01-BP-50C45_20251127_124233-thumb1x.webp 1x,
+              ./img/credentials/01-BP-50C45_20251127_124233-thumb2x.webp 2x">
+            <img alt="Диплом «Нутрициология. Наука и практика»" width="495" height="350"
+              loading="lazy" decoding="async" data-full="BP-50C45_20251127_124233"
+              src="./img/credentials/01-BP-50C45_20251127_124233-thumb1x.webp">
+          </picture>
         </li>
 
         <li>
-          <a href="/files/Child_Nutrition_and_Eating_Behaviour.pdf" target="_blank">
-            <picture>
-              <source type="image/webp"
-                srcset="./img/diplomata/Child_Nutrition_and_Eating_Behaviour.webp 1x, ./img/diplomata/Child_Nutrition_and_Eating_Behaviour-2x.webp 2x">
-              <img alt="Диплом «Child Nutrition and Eating Behaviour»" width="248" height="350"
-                loading="lazy" decoding="async"
-                src="./img/diplomata/Child_Nutrition_and_Eating_Behaviour.webp">
-            </picture>
-          </a>
+          <picture>
+            <source type="image/avif" srcset="
+              ./img/credentials/02-59f60efe771c7fb09f436d07ba0697dc-thumb1x.avif 1x,
+              ./img/credentials/02-59f60efe771c7fb09f436d07ba0697dc-thumb2x.avif 2x">
+            <source type="image/webp" srcset="
+              ./img/credentials/02-59f60efe771c7fb09f436d07ba0697dc-thumb1x.webp 1x,
+              ./img/credentials/02-59f60efe771c7fb09f436d07ba0697dc-thumb2x.webp 2x">
+            <img alt="Сертификат «Детское писание и пищевое поведение»" width="467" height="350"
+              loading="lazy" decoding="async" data-full="59f60efe771c7fb09f436d07ba0697dc"
+              src="./img/credentials/02-59f60efe771c7fb09f436d07ba0697dc-thumb1x.webp">
+          </picture>
         </li>
 
         <li>
-          <a href="/files/Coursera_88VKLZGR6AJC.pdf" target="_blank">
-            <picture>
-              <source type="image/webp"
-                srcset="./img/diplomata/Coursera_88VKLZGR6AJC.webp 1x, ./img/diplomata/Coursera_88VKLZGR6AJC-2x.webp 2x">
-              <img alt="Сертификат «Stanford Introduction to Food and Health»" width="453"
-                height="350" loading="lazy" decoding="async"
-                src="./img/diplomata/Coursera_88VKLZGR6AJC.webp">
-            </picture>
-          </a>
+          <picture>
+            <source type="image/avif" srcset="
+              ./img/credentials/03-Child_Nutrition_and_Eating_Behaviour-thumb1x.avif 1x,
+              ./img/credentials/03-Child_Nutrition_and_Eating_Behaviour-thumb2x.avif 2x">
+            <source type="image/webp" srcset="
+              ./img/credentials/03-Child_Nutrition_and_Eating_Behaviour-thumb1x.webp 1x,
+              ./img/credentials/03-Child_Nutrition_and_Eating_Behaviour-thumb2x.webp 2x">
+            <img alt="Диплом «Child Nutrition and Eating Behaviour»" width="247" height="350"
+              loading="lazy" decoding="async" data-full="Child_Nutrition_and_Eating_Behaviour"
+              src="./img/credentials/03-Child_Nutrition_and_Eating_Behaviour-thumb1x.webp">
+          </picture>
+        </li>
+
+        <li>
+          <picture>
+            <source type="image/avif" srcset="
+              ./img/credentials/04-Coursera_88VKLZGR6AJC-thumb1x.avif 1x,
+              ./img/credentials/04-Coursera_88VKLZGR6AJC-thumb2x.avif 2x">
+            <source type="image/webp" srcset="
+              ./img/credentials/04-Coursera_88VKLZGR6AJC-thumb1x.webp 1x,
+              ./img/credentials/04-Coursera_88VKLZGR6AJC-thumb2x.webp 2x">
+            <img alt="Сертификат «Stanford Introduction to Food and Health»" width="453"
+              height="350" loading="lazy" decoding="async" data-full="Coursera_88VKLZGR6AJC"
+              src="./img/credentials/04-Coursera_88VKLZGR6AJC-thumb1x.webp">
+          </picture>
         </li>
       </ul>
     </section>
@@ -379,6 +409,61 @@
       </ul>
     </section>
   </footer>
+
+  <template id="BP-50C45_20251127_124233">
+    <picture>
+      <source type="image/avif" srcset="
+        ./img/credentials/01-BP-50C45_20251127_124233-full1x.avif 1x,
+        ./img/credentials/01-BP-50C45_20251127_124233-full2x.avif 2x">
+      <source type="image/webp" srcset="
+        ./img/credentials/01-BP-50C45_20251127_124233-full1x.webp 1x,
+        ./img/credentials/01-BP-50C45_20251127_124233-full2x.webp 2x">
+      <img alt="Диплом «Нутрициология. Наука и практика»" width="1527" height="1080" loading="lazy"
+        decoding="async" src="./img/credentials/01-BP-50C45_20251127_124233-full1x.webp">
+    </picture>
+  </template>
+
+  <template id="59f60efe771c7fb09f436d07ba0697dc">
+    <picture>
+      <source type="image/avif" srcset="
+        ./img/credentials/02-59f60efe771c7fb09f436d07ba0697dc-full1x.avif 1x,
+        ./img/credentials/02-59f60efe771c7fb09f436d07ba0697dc-full2x.avif 2x">
+      <source type="image/webp" srcset="
+        ./img/credentials/02-59f60efe771c7fb09f436d07ba0697dc-full1x.webp 1x,
+        ./img/credentials/02-59f60efe771c7fb09f436d07ba0697dc-full2x.webp 2x">
+      <img alt="Сертификат «Детское писание и пищевое поведение»" width="467" height="350"
+        loading="lazy" decoding="async"
+        src="./img/credentials/02-59f60efe771c7fb09f436d07ba0697dc-full1x.webp">
+    </picture>
+  </template>
+
+  <template id="Child_Nutrition_and_Eating_Behaviour">
+    <picture>
+      <source type="image/avif" srcset="
+        ./img/credentials/03-Child_Nutrition_and_Eating_Behaviour-full1x.avif 1x,
+        ./img/credentials/03-Child_Nutrition_and_Eating_Behaviour-full2x.avif 2x">
+      <source type="image/webp" srcset="
+        ./img/credentials/03-Child_Nutrition_and_Eating_Behaviour-full1x.webp 1x,
+        ./img/credentials/03-Child_Nutrition_and_Eating_Behaviour-full2x.webp 2x">
+      <img alt="Диплом «Child Nutrition and Eating Behaviour»" width="247" height="350"
+        loading="lazy" decoding="async"
+        src="./img/credentials/03-Child_Nutrition_and_Eating_Behaviour-full1x.webp">
+    </picture>
+  </template>
+
+  <template id="Coursera_88VKLZGR6AJC">
+    <picture>
+      <source type="image/avif" srcset="
+        ./img/credentials/04-Coursera_88VKLZGR6AJC-full1x.avif 1x,
+        ./img/credentials/04-Coursera_88VKLZGR6AJC-full2x.avif 2x">
+      <source type="image/webp" srcset="
+        ./img/credentials/04-Coursera_88VKLZGR6AJC-full1x.webp 1x,
+        ./img/credentials/04-Coursera_88VKLZGR6AJC-full2x.webp 2x">
+      <img alt="Сертификат «Stanford Introduction to Food and Health»" width="453" height="350"
+        loading="lazy" decoding="async"
+        src="./img/credentials/04-Coursera_88VKLZGR6AJC-full1x.webp">
+    </picture>
+  </template>
 </body>
 
 </html>
